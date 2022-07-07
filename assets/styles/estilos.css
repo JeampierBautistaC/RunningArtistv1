@@ -1,0 +1,788 @@
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../fonts/Montserrat-Medium.ttf");
+}
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    max-width: 100%;
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-family: Montserrat-Bold;
+    font-size: 2.5em;
+    color: black;
+    text-align: center;
+}
+
+h2 {
+    font-family: Montserrat-Bold;
+    font-size: 2.7em;
+    color: black;
+    text-align: center;
+}
+
+.line-title{
+    max-width: 22vw;
+    height: 3px;
+    background: #16c573;
+    margin: 8px auto;
+    border-radius: 5px;
+}
+
+h3 {
+    font-family: Montserrat-Bold;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+h6 {
+    font-family: Montserrat-Bold;
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+
+p {
+    font-family: Montserrat-Regular;
+    font-size: 1.25em;
+
+}
+
+ul {
+    font-family: Montserrat-Regular;
+    font-size: 1.25em;
+    list-style: none;
+}
+
+.color-acento{ color:rgb(17, 92, 36); }
+
+
+button{
+    font-family: Montserrat-Regular;
+    font-size:1em;
+    border-radius:8px;
+    border:transparent;
+    box-shadow:2px 2px 10px rgba(0,0,0,0.5);
+    color:white;
+    background-color:#14a344;
+    width: 12em;
+}
+button img{
+    background-position: center center;
+    height: 35px;
+    width: 35px;
+}
+button:hover{
+    background-color:rgb(17, 92, 36);
+}
+.botones{
+    display: flex;
+    justify-content: center;
+
+}
+.botones button {
+    margin: 0% 8%;
+
+}
+.botones button div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+button p{
+    font-size: 1em;
+}
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Quienes somos*/
+
+#quienes-somos {
+    padding: 5% 10%;
+    background-color: whitesmoke;
+}
+.qs-img{
+    background-image: url("../images/somos-running-artist.jpg");
+    width: 25vw;
+    height: 25vw;
+    background-size: cover;
+}
+.container-quienes-somos {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.container-quienes-somos p {
+    text-align: left;
+    padding: 20% 15%;
+}
+
+.img-container {
+    background-size: cover;
+    object-fit: cover;
+    width: 80%;
+    height: 80%;
+}
+
+/*Sieres-runner*/
+
+#sieres-runner {
+    background-color: rgba(32, 100, 11, 0.445);
+}
+
+#sieres-runner .container{
+    text-align: left;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#sieres-runner .si-eres-runner{
+    display: flex;
+    flex-direction: column;
+}
+
+.si-eres-runner li{
+    padding: 10px 0px;
+    width: 28em;
+}
+
+#sieres-runner ul li {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#sieres-runner img {
+    width: 20px;
+    height: 20px;
+    margin: 0 2%;
+}
+
+#sieres-runner h2{
+    margin-top: 0px;
+}
+
+#sieres-runner .img-container{
+    background-image: url("../images/runner.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px; 
+}
+
+/*Beneficios*/
+
+#beneficios {
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+#beneficios .container{
+    padding: 100px 20px;
+}
+
+#beneficios ul{
+    text-align: left;
+}
+#beneficios ul li {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#beneficios .redes {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#beneficios img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5%;
+}
+
+#beneficios ul li p {
+    color: black;
+    font-size: 1.0em;
+}
+
+#beneficios h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#beneficios h3{
+    font-size: 1.5em;
+    color: black;
+}
+
+.col-beneficios{
+    padding: 50px 5px;
+}
+.col-beneficios li{
+    padding: 10px 0px;
+    width: 28em;
+}
+
+.container-beneficios {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+}
+
+/**/
+
+#beneficios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+#beneficios .grids{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#beneficios .grids img{
+    display: flex;
+    background-size:auto;
+    object-fit: auto;
+    width: 60%;
+    height: 67%;
+    margin-left: 20%;
+    margin-bottom: 13%;
+}
+
+.carta{
+    padding: 80px;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    background-color: rgba(70, 110, 25, 0.767);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+/*
+.carta:hover{
+    background-color: #bed6d7;
+
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    )
+    ,url("../images/CirculoPuntos.png");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    )
+    ,url("../images/ProductosDescuento.png");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    )
+    ,url("../images/ClientesRepresentativos.png");
+
+}
+*/
+
+/*Sieres-socio*/
+
+#sieres-socio{
+    background-color: rgba(32, 100, 11, 0.445);
+}
+
+#sieres-socio h3{
+    text-align: center;
+    padding-right: 30px;
+    color: black
+}
+
+#sieres-socio .container{
+    text-align: left;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#sieres-socio .si-eres-socio{
+    display: flex;
+    flex-direction: column;
+}
+
+.si-eres-socio li{
+    padding: 10px 0px;
+    width: 28em;
+}
+
+#sieres-socio ul li {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#sieres-socio img {
+    width: 20px;
+    height: 20px;
+    margin: 0 2%;
+}
+
+#sieres-socio ul{
+    margin-left: 50px;
+}
+
+#sieres-socio h2{
+    margin-top: 0px;
+    text-align: left;
+}
+
+#sieres-socio .img-container{
+    background-image: url("../images/socio.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px; 
+}
+
+/*enterate 2*/
+
+
+#enterate-2 {
+    text-align: center;
+    padding: 5% 10%;
+}
+
+#enterate-2 p {
+    text-align: center;
+    padding: 0px 20px;
+}
+
+#enterate-2 .carta{
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 5px;
+    color: white;
+}
+
+#enterate-2 .carta:first-child{
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    )
+    ,url("../images/testimonio3.jpg");
+}
+
+#enterate-2 .carta:nth-child(2){
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    )
+    ,url("../images/testimonio2.jpg");
+}
+
+#enterate-2 .carta:nth-child(3){
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+    )
+    ,url("../images/testimonio1.jpg");
+
+}
+
+/*
+#enterate-2 .carta:hover{
+    background-color: #c7d7be;
+
+}
+
+*/
+
+/*dashboard*/
+
+#dashboard {
+    background-color: whitesmoke;
+}
+
+#dashboard .container{
+    padding: 100px 20px;
+    justify-items: center;
+}
+
+.card{
+    justify-content: center;
+    align-items: center;
+}
+
+#dashboard h3{
+    text-align: center;
+    color: black
+}
+
+#dashboard p{
+    text-align: center;
+}
+
+/*footer*/
+footer p {
+    font-size: 13px;
+}
+
+footer {
+    font-family: Montserrat-Regular;
+    background-color: rgba(32, 100, 11, 0.445);
+}
+
+footer h3 {
+    font-size: 12px;
+    color: black;
+}
+
+.contacto-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.contacto-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.footer-group {
+    padding: 10px 40px;
+}
+.footer-group-bottom{
+    display: flex;
+    padding: 0 0;
+    justify-content: space-evenly;
+}
+
+.sns{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50vw;
+    justify-content: space-evenly;
+}
+
+.botones button div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.sns img{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    margin-top: 7px;
+}
+.sns p{
+    margin-right: 15px;
+}
+.line {
+    max-width: 98%;
+    height: 2px;
+    background: rgb(41, 83, 6);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(15,35,0);
+    background-image: -moz-linear-gradient( 135deg, rgba(15,35,0, 0.8) 0%, rgba(7, 117, 35, 0.8) 100%);
+    background-image: -webkit-linear-gradient( 135deg, rgba(15,35,0, 0.8) 0%, rgba(7, 117, 35, 0.8) 100%);
+    background-image: -ms-linear-gradient( 135deg, rgba(15,35,0, 0.8) 0%, rgba(7, 117, 35, 0.8) 100%);
+    background-image: linear-gradient( 135deg, rgba(15,35,0, 0.8) 0%, rgba(7, 117, 35, 0.8) 100%);
+}
+
+header.logo {
+    margin: 0;
+    padding: 25px 30px;
+}
+
+header nav {
+
+    flex-direction: row;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-family: Montserrat-Regular;
+    color: whitesmoke;
+
+}
+
+header a:hover{
+    color: rgb(0, 0, 0);
+}
+
+#hero .texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url("../images/running.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: white;
+}
+
+#hero h3 {
+    font-size: 1.45em;
+}
+
+#hero .clientes {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero .clientes img {
+    width: 150px;
+    height: 50px;
+    margin: 0 5%;
+}
+
+
+#quienes-somos .container{
+    justify-items: center;
+}
+#quienes-somos .container-quienes-somos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#quienes-somos p{
+    font-size: 1.75vw;
+    margin-top: 0px;
+    text-align: justify;
+}
+
+
+@media(max-width: 1200px) {
+
+    header{
+        position:static;
+    }
+    
+    .container-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    /* Quienes Somos */
+
+    #quienes-somos {
+        padding-bottom: 13% ;
+    }
+    .container-quienes-somos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #quienes-somos p{
+        font-size: 1.25em;
+        margin-top: 0px;
+        text-align: center;
+        padding: 1.5em;
+    }
+    .qs-img{
+        background-image: url("../images/somos-running-artist.jpg");
+        width: 20em;
+        height: 20em;
+        background-size: cover;
+        align-items: center;
+
+    }
+
+    /* Si eres Runner */
+    
+    #sieres-runner h2{
+        font-size: 2.3em;
+    }
+
+    /*#sieres-runner li{
+        font-size: 0.75em;
+    }*/
+
+    #sieres-runner .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 25px;
+    }
+
+    #siers-runner .img-container{
+        background-image: url("../images/runner.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    /* Beneficios */
+
+    .container-beneficios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #beneficios {
+        text-align: center;
+        padding: 0 10% ;
+    }
+
+    #beneficios .mod{
+        padding-top: 50px;
+    }
+    #beneficios ul li p {
+        color: black;
+        font-size: 0.8em;
+    }
+    
+    .col-beneficios{
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .col-beneficios li{
+        padding: 10px 60px;
+        width: 28em;
+    }
+
+    #beneficios .grids{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #beneficios .grids img{
+        display: flex;
+        background-size:auto;
+        width: 30%;
+        height: 37%;
+        margin: 0;
+
+    }
+
+    .carta{
+        display: flex;
+        flex-direction: column ;
+        padding: 80px;
+        align-items: center;
+    }
+
+    /* Si eres Socio */
+    
+    #sieres-socio .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 25px;
+    }
+
+    #siers-socio .img-container{
+        background-image: url("../images/socio.jpg");
+        background-size: cover;
+    }
+
+    #sieres-socio h2{
+        font-size: 2em;
+    }
+
+    #sieres-socio h3{
+        font-size: 2em;
+    }
+
+    /*---------------------------*/
+    footer p {
+        font-size: 9px;
+    }
+
+    .sns{
+        display: none;
+    }
+
+    .contacto-1 {
+        justify-content: center;
+    }
+}
